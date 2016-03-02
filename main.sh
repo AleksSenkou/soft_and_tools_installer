@@ -9,7 +9,8 @@ green_msg "....... Soft and tools installation .......\n\n"
 
 ###### SOFT ######
 add_soft_repositories &&
-install terminator nemo sublime-text-installer skype gparted wine playonlinux vlc rar &&
+install terminator sublime-text-installer skype gparted geary wine playonlinux vlc &&
+install nemo nemo-fileroller &&
 install firefox devilspie google-chrome-stable &&
 
 ###### TOOLS ######
@@ -18,7 +19,7 @@ install zsh git-core &&
 install_oh_my_zsh &&
 install build-essential libgl1-mesa-dev && # qt
 install icedtea-7-plugin openjdk-7-jre &&  # java
-install tlp tlp-rdw lm-sensors htop &&
+install tlp tlp-rdw lm-sensors htop rar &&
 remove update-notifier &&
 
 ###### CONFIGS ######
@@ -28,7 +29,8 @@ paste_terminator_configs &&
 install_subl_package_control &&
 paste_subl_configs &&
 paste_zsh_configs &&
-config_git
+make_nemo_default_file_manager &&
+config_git &&
 config_firefox &&
 
 ###### GUI ######
