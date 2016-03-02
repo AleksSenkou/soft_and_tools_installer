@@ -48,7 +48,15 @@ install python3.5 &&
 install_nodejs &&
 install_ruby &&
 
+###### SHUTDOWN ######
 change_shell_to_zsh
-# red_msg "Are you ready for shutdown?[ENTER]"
-#shutdown_process
-#sudo shutdown -r 0
+
+red_msg "Are you ready for shutdown?[y/..]"
+read shutdown_answer
+
+if [ "$shutdown_answer" = "y" ]
+then
+  sudo shutdown -r 0
+else
+  exit
+fi
