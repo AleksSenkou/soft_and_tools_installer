@@ -42,6 +42,11 @@ set_numix_icons &&
 show_date_and_seconds_in_top_bar &&
 
 link_to_zukitre_theme
+###### LNG ######
+install libgdbm-dev libncurses5-dev automake libtool bison libffi-dev &&
+install python3.5 &&
+install_nodejs &&
+install_ruby &&
 
 change_shell_to_zsh
 # red_msg "Are you ready for shutdown?[ENTER]"
