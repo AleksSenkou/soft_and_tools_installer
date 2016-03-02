@@ -95,8 +95,6 @@ link_to_zukitre_theme(){
     brown_msg "www.deviantart.com/download/499776227/zukitre_shell_by_tgraeca84-d89jxsz.zip?token=f6dfbd58a594cd30c8b13951d636bdfe191ba7cf&ts=1456844663 \n"
 }
 
-# devilspie on session start
-
 # disable_caps_lock(){
 #     setxkbmap -option caps:none
 # }

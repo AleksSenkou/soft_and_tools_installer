@@ -41,7 +41,6 @@ install numix-icon-theme-circle &&
 set_numix_icons &&
 show_date_and_seconds_in_top_bar &&
 
-link_to_zukitre_theme
 ###### LNG ######
 install libgdbm-dev libncurses5-dev automake libtool bison libffi-dev &&
 install python3.5 &&
@@ -50,6 +49,7 @@ install_ruby &&
 
 ###### SHUTDOWN ######
 change_shell_to_zsh
+link_to_zukitre_theme
 
 red_msg "Are you ready for shutdown?[y/..]"
 read shutdown_answer
