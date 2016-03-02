@@ -1,4 +1,5 @@
 source colors.sh
+source soft.sh
 
 get_imagewriter() {
     blue_msg ". imagewriter ."
@@ -16,4 +17,14 @@ install_oh_my_zsh() {
     wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
 
     cd "$OLDPWD"
+}
+
+install_pg(){
+    sudo sh -c "echo 'deb http://apt.postgresql.org/pub/repos/apt/ precise-pgdg main' > /etc/apt/sources.list.d/pgdg.list"
+    wget --quiet -O - http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc | sudo apt-key add -
+
+    sudo apt-get update
+
+    install postgresql-common postgresql-9.3 libpq-dev
+    sudo -u postgres createuser aleks -s
 }
