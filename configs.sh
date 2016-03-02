@@ -60,6 +60,8 @@ disable_apport(){
 config_git(){
     local email name
 
+    git config --global color.ui true
+
     brown_msg "Enter git user.email:"
     read email
     git config --global user.email $email
