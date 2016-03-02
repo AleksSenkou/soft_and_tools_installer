@@ -63,6 +63,12 @@ config_git(){
     git push https://github.com/AleksSenkou/soft_and_tools_installer.git
 }
 
+config_firefox(){
+    mkdir ~/.devilspie
+    touch ~/.devilspie/flash-fullscreen-firefox.ds
+    printf '%s\n%s\n' '(if' '(is (application_name) "plugin-container")' '(begin' '(focus)' ')' ')' >> ~/.devilspie/flash-fullscreen-firefox.ds
+}
+
 set_numix_icons(){
     gsettings set org.gnome.desktop.interface icon-theme 'Numix-Circle'
 }
@@ -76,6 +82,8 @@ link_to_zukitre_theme(){
     echo 'find zukitre here:'
     brown_msg "www.deviantart.com/download/499776227/zukitre_shell_by_tgraeca84-d89jxsz.zip?token=f6dfbd58a594cd30c8b13951d636bdfe191ba7cf&ts=1456844663 \n"
 }
+
+# devilspie on session start
 
 # disable_caps_lock(){
 #     setxkbmap -option caps:none
