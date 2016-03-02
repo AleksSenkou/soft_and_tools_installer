@@ -57,6 +57,10 @@ config_git(){
     brown_msg "Enter git user.name:"
     read name
     git config --global user.name $name
+
+    blue_msg "Saving credentials \n"
+    git config credential.helper store
+    git push https://github.com/AleksSenkou/soft_and_tools_installer.git
 }
 
 set_numix_icons(){
