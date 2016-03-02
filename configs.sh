@@ -47,6 +47,18 @@ paste_zsh_configs(){
     cp $new_conf/.zshrc ~/.zshrc
 }
 
+config_git(){
+    local email name
+
+    brown_msg "Enter git user.email:"
+    read email
+    git config --global user.email $email
+
+    brown_msg "Enter git user.name:"
+    read name
+    git config --global user.name $name
+}
+
 set_numix_icons(){
     gsettings set org.gnome.desktop.interface icon-theme 'Numix-Circle'
 }

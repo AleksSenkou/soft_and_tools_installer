@@ -28,6 +28,7 @@ paste_terminator_configs &&
 install_subl_package_control &&
 paste_subl_configs &&
 paste_zsh_configs &&
+config_git
 
 ###### GUI ######
 install numix-icon-theme-circle &&
