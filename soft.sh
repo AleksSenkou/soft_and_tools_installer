@@ -25,6 +25,7 @@ add_soft_repositories() {
     add_repo "ppa:linrunner/tlp"
     add_repo "ppa:numix/ppa"
     add_repo "ppa:yorba/ppa"
+    add_repo "ppa:danielrichter2007/grub-customizer"
 
     sudo dpkg --add-architecture i386 # 32-bits architecture for skype and wine
     add_repo "deb http://archive.canonical.com/ $(lsb_release -sc) partner"

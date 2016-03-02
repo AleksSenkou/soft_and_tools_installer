@@ -19,7 +19,7 @@ install zsh git-core &&
 install_oh_my_zsh &&
 install build-essential libgl1-mesa-dev && # qt
 install icedtea-7-plugin openjdk-7-jre &&  # java
-install tlp tlp-rdw lm-sensors htop rar &&
+install tlp tlp-rdw lm-sensors htop rar grub-customizer &&
 remove update-notifier &&
 
 ###### CONFIGS ######
