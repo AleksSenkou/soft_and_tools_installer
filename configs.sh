@@ -52,6 +52,11 @@ make_nemo_default_file_manager(){
     xdg-mime default nemo.desktop inode/directory application/x-gnome-saved-search
 }
 
+disable_apport(){
+    sudo service apport stop
+    sudo sed -ibak -e s/^enabled\=1$/enabled\=0/ /etc/default/apport
+}
+
 config_git(){
     local email name
 

@@ -32,6 +32,7 @@ paste_zsh_configs &&
 make_nemo_default_file_manager &&
 config_git &&
 config_firefox &&
+disable_apport &&
 
 ###### GUI ######
 install numix-icon-theme-circle &&
