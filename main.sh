@@ -10,7 +10,7 @@ green_msg "....... Soft and tools installation .......\n\n"
 ###### SOFT ######
 add_soft_repositories &&
 install terminator nemo sublime-text-installer skype gparted wine playonlinux vlc rar &&
-install firefox google-chrome-stable &&
+install firefox devilspie google-chrome-stable &&
 
 ###### TOOLS ######
 install git-all &&
@@ -29,6 +29,7 @@ install_subl_package_control &&
 paste_subl_configs &&
 paste_zsh_configs &&
 config_git
+config_firefox &&
 
 ###### GUI ######
 install numix-icon-theme-circle &&
