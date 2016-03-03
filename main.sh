@@ -22,7 +22,7 @@ install icedtea-7-plugin openjdk-7-jre &&  # java
 install tlp tlp-rdw lm-sensors htop rar grub-customizer &&
 install mysql-server mysql-client libmysqlclient-dev &&
 install_pg &&
-remove update-notifier &&
+remove update-notifier emacs24 emacs &&
 
 ###### CONFIGS ######
 clone 'linux_conf' && # skype, terminator, zsh and subl configs
