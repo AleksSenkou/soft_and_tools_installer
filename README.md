@@ -40,5 +40,5 @@
 - nodejs
 
 ###### also
-- zsh with [configs](https://github.com/AleksSenkou/linux_conf/blob/master/.zshrc)
+- zsh with [.zshrc](https://github.com/AleksSenkou/linux_conf/blob/master/.zshrc)
 - oh_my_zsh
