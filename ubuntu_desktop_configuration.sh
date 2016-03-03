@@ -1,9 +1,6 @@
 #! /bin/bash
 
-source colors.sh
-source soft.sh
-source tools.sh
-source configs.sh
+for file in lib/*.sh; do source $file; done
 
 green_msg "....... Soft and tools installation .......\n\n"
 
