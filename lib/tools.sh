@@ -45,5 +45,5 @@ install_pg(){
     sudo apt-get update
 
     install postgresql-common postgresql-9.3 libpq-dev
-    sudo -u postgres createuser aleks -s
+    sudo -u postgres createuser $USER -s
 }
