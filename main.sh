@@ -31,7 +31,7 @@ paste_terminator_configs &&
 install_subl_package_control &&
 paste_subl_configs &&
 paste_zsh_configs &&
-make_nemo_default_file_manager &&
+set_default_programs &&
 config_git &&
 config_firefox &&
 disable_apport &&

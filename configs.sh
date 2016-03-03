@@ -47,9 +47,12 @@ paste_zsh_configs(){
     cp $new_conf/.zshrc ~/.zshrc
 }
 
-make_nemo_default_file_manager(){
+set_default_programs(){
     gsettings set org.gnome.desktop.background show-desktop-icons false
     xdg-mime default nemo.desktop inode/directory application/x-gnome-saved-search
+
+    cp $new_conf/defaults.list ~/.local/share/applications/defaults.list
+    killall nautilus
 }
 
 disable_apport(){
