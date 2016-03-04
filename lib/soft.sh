@@ -5,7 +5,7 @@ install() {
 
     for((i=0; i < $#; i++))
     {
-        blue_msg ". ${args[$i]} ."
+        blue_msg ". ${args[$i]} .\n\n"
         sudo apt-get -y install ${args[$i]}
 
         printf '\n'

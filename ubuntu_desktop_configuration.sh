@@ -4,6 +4,8 @@ for file in lib/*.sh; do source $file; done
 
 green_msg "....... Soft and tools installation .......\n\n"
 
+select_text_color
+
 ###### SOFT ######
 add_soft_repositories &&
 install terminator sublime-text-installer skype gparted geary wine playonlinux vlc &&
