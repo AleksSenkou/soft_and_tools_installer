@@ -18,7 +18,7 @@ install zsh git-core &&
 install_oh_my_zsh &&
 install build-essential libgl1-mesa-dev && # qt
 install icedtea-7-plugin openjdk-7-jre &&  # java
-install tlp tlp-rdw lm-sensors htop rar grub-customizer &&
+install tlp tlp-rdw lm-sensors htop rar grub-customizer whois &&
 install mysql-server mysql-client libmysqlclient-dev &&
 install_pg &&
 remove update-notifier emacs24 emacs &&
