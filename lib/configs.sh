@@ -13,7 +13,7 @@ clone() {
 }
 
 paste_skype_configs() {
-    cp -avr $new_conf/Skype ~/.config/Skype
+    cp -avr $new_conf/Skype ~/.config
 }
 
 paste_terminator_configs() {
