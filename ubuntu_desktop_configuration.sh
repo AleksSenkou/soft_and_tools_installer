@@ -41,10 +41,10 @@ set_numix_icons &&
 show_date_and_seconds_in_top_bar &&
 
 ###### LNG ######
-install libgdbm-dev libncurses5-dev automake libtool bison libffi-dev &&
+install libgdbm-dev libncurses5-dev automake libtool bison libffi-dev libgmp-dev &&
 install python3.5 &&
 install_nodejs &&
-install_ruby &&
+install_ruby_and_rails &&
 
 ###### SHUTDOWN ######
 change_shell_to_zsh

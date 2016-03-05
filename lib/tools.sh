@@ -19,18 +19,30 @@ install_oh_my_zsh() {
     cd "$OLDPWD"
 }
 
-install_ruby(){
-    curl -L https://get.rvm.io | bash -s stable
-    gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
-    source ~/.rvm/scripts/rvm
+install_ruby_and_rails(){
+    cd
+    git clone git://github.com/sstephenson/rbenv.git .rbenv
+    echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+    echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+    exec $SHELL
 
-    red_msg "Maybe u need to change a terminal for ruby installation"
+    git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+    echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
+    exec $SHELL
 
-    rvm install 2.3.0
-    rvm use 2.3.0 --default
+    git clone https://github.com/sstephenson/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
+
+    rbenv install 2.2.4
+    rbenv global 2.2.4
 
     echo "gem: --no-ri --no-rdoc" > ~/.gemrc
+
     gem install bundler
+    gem install rails -v 4.2.4
+
+    bundle exec spring binstub --all
+
+    cd "$OLDPWD"
 }
 
 install_nodejs(){
