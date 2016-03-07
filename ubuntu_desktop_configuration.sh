@@ -8,19 +8,21 @@ select_text_color
 
 ###### SOFT ######
 add_soft_repositories &&
-install terminator sublime-text-installer skype gparted geary wine playonlinux vlc &&
+install terminator sublime-text-installer skype gparted geary wine playonlinux vlc rar &&
 install nemo nemo-fileroller &&
 install firefox devilspie google-chrome-stable &&
+install grub-customizer &&
 
 ###### TOOLS ######
 install git-all &&
 install zsh git-core &&
 install_oh_my_zsh &&
 install build-essential libgl1-mesa-dev && # qt
-install icedtea-7-plugin openjdk-7-jre &&  # java
-install tlp tlp-rdw lm-sensors htop rar grub-customizer whois &&
-install mysql-server mysql-client libmysqlclient-dev &&
+install_java &&
+install_helping_tools &&
+install_mysql &&
 install_pg &&
+
 remove update-notifier emacs24 emacs &&
 
 ###### CONFIGS ######

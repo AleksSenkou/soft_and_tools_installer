@@ -11,7 +11,15 @@ get_imagewriter() {
     cd "$OLDPWD"
 }
 
-install_oh_my_zsh() {
+install_java(){
+    install icedtea-7-plugin openjdk-7-jre
+}
+
+install_helping_tools(){
+    install tlp tlp-rdw lm-sensors htop whois
+}
+
+install_oh_my_zsh(){
     cd ~
 
     wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
@@ -50,7 +58,16 @@ install_nodejs(){
     install nodejs
 }
 
+install_mysql(){
+    install mysql-server mysql-client libmysqlclient-dev
+}
+
 install_pg(){
+    # install postgresql postgresql-contrib libpq-dev
+    # sudo su - postgres
+    # createuser --interactive --pwprompt
+    # exit
+
     sudo sh -c "echo 'deb http://apt.postgresql.org/pub/repos/apt/ precise-pgdg main' > /etc/apt/sources.list.d/pgdg.list"
     wget --quiet -O - http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc | sudo apt-key add -
 
