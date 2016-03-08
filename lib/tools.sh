@@ -1,5 +1,5 @@
-source colors.sh
-source soft.sh
+source lib/colors.sh
+source lib/soft.sh
 
 get_imagewriter() {
     blue_msg ". imagewriter ."
@@ -41,6 +41,7 @@ install_ruby_and_rails(){
     git clone https://github.com/sstephenson/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
 
     rbenv install 2.2.4
+    rbenv install 2.3.0
     rbenv global 2.2.4
 
     echo "gem: --no-ri --no-rdoc" > ~/.gemrc

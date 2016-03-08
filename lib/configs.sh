@@ -1,4 +1,4 @@
-source colors.sh
+source lib/colors.sh
 
 clone() {
     brown_msg ". Cloning configs... \n"

@@ -38,4 +38,3 @@ red_msg(){
 blue_msg() {
     printf "${BLUE}$1${text_color}"
 }
-

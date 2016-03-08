@@ -34,8 +34,8 @@
 - changes in top-bar(show full date and time)
 
 ##### LNG
-- rvm
-- ruby 2.3.0
+- rbenv
+- ruby 2.2.4 and 2.3.0
 - python 3.5
 - nodejs
 

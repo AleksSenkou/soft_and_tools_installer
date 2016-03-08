@@ -18,6 +18,7 @@ install git-all &&
 install zsh git-core &&
 install_oh_my_zsh &&
 install build-essential libgl1-mesa-dev && # qt
+install ssh_copy_id &&
 install_java &&
 install_helping_tools &&
 install_mysql &&
