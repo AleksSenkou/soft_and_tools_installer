@@ -37,3 +37,11 @@ add_soft_repositories() {
 
     sudo apt-get update
 }
+
+add_passenger_repo(){
+    sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 561F9B9CAC40B2F7
+    install apt-transport-https ca-certificates
+
+    sudo sh -c 'echo deb https://oss-binaries.phusionpassenger.com/apt/passenger trusty main > /etc/apt/sources.list.d/passenger.list'
+    sudo apt-get update
+}

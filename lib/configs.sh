@@ -94,6 +94,33 @@ link_to_zukitre_theme(){
     brown_msg "www.deviantart.com/download/499776227/zukitre_shell_by_tgraeca84-d89jxsz.zip?token=f6dfbd58a594cd30c8b13951d636bdfe191ba7cf&ts=1456844663 \n"
 }
 
+create_user_account(){
+    brown_msg 'Type user name, please:'
+    read user_name
+
+    sudo adduser $user_name
+    sudo adduser $user_name sudo
+    su $user_name
+}
+
+config_nginx(){
+    local nginx_default=/etc/nginx/sites-enabled/default
+    local nginx_conf=/etc/nginx/nginx.conf
+
+    brown_msg 'Type domain name, please:'
+    read domain
+    brown_msg "\nType app name, please:"
+    read app_name
+
+    sudo cp nginx/nginx.conf $nginx_conf
+    sudo sed -ibak -e "s/USER/$user_name/g" $nginx_conf
+
+    sudo cp nginx/default $nginx_default
+    sudo sed -ibak -e "s/USER/$user_name/g" $nginx_default
+    sudo sed -ibak -e "s/DOMAIN/$domain/g" $nginx_default
+    sudo sed -ibak -e "s/APP/$app_name/g" $nginx_default
+}
+
 # disable_caps_lock(){
 #     setxkbmap -option caps:none
 # }
