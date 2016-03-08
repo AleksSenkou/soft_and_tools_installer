@@ -1,6 +1,6 @@
 # Ubuntu configuration
 
-### Server Ubuntu 14.04
+###● Server Ubuntu 14.04
 
 ##### Tools
 - git
@@ -21,7 +21,9 @@
 - ruby-passenger
 - nginx with [nginx.conf](https://github.com/AleksSenkou/ubuntu_configuration/blob/master/nginx/nginx.conf) and [server conf](https://github.com/AleksSenkou/ubuntu_configuration/blob/master/nginx/default)
 
-### Desktop Ubuntu 14.04
+---
+
+###○ Desktop Ubuntu 14.04
 
 ##### Tools
 - git(with --global config)
