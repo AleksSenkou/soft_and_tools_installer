@@ -1,5 +1,26 @@
 # Ubuntu configuration
 
+### Server Ubuntu 14.04
+
+##### Tools
+- git
+- mysql server and client
+- pg with `$USER`
+- java
+- tlp tlp-rdw
+- lm-sensors
+- htop
+
+##### LNG
+- rbenv
+- ruby 2.2.4 and 2.3.0 + bundler and rails 4.2.4
+- python 3.5
+- nodejs
+
+##### Passenger & Nginx
+- ruby-passenger
+- nginx with [nginx.conf](https://github.com/AleksSenkou/ubuntu_configuration/blob/master/nginx/nginx.conf) and [server conf](https://github.com/AleksSenkou/ubuntu_configuration/blob/master/nginx/default)
+
 ### Desktop Ubuntu 14.04
 
 ##### Tools
