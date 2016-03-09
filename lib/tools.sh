@@ -16,7 +16,7 @@ install_java(){
 }
 
 install_helping_tools(){
-    install tlp tlp-rdw lm-sensors htop whois
+    install tlp tlp-rdw lm-sensors htop whois xclip
 }
 
 install_oh_my_zsh(){
