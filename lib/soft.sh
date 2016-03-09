@@ -28,13 +28,14 @@ add_soft_repositories() {
     add_repo "ppa:danielrichter2007/grub-customizer"
     add_repo "ppa:fkrull/deadsnakes"
 
+    wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+    sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+
     sudo dpkg --add-architecture i386 # 32-bits architecture for skype and wine
     add_repo "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
     add_repo "ppa:ubuntu-wine/ppa"
 
-    wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-    sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
-
+    sudo sed -i -e 's/deb http/deb [arch=amd64] http/' "/etc/apt/sources.list.d/google-chrome.list"
     sudo apt-get update
 }
 

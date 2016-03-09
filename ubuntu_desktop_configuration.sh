@@ -18,7 +18,7 @@ install git-all &&
 install zsh git-core &&
 install_oh_my_zsh &&
 install build-essential libgl1-mesa-dev && # qt
-install ssh_copy_id &&
+install ssh &&
 install_java &&
 install_helping_tools &&
 install_mysql &&
@@ -44,7 +44,7 @@ set_numix_icons &&
 show_date_and_seconds_in_top_bar &&
 
 ###### LNG ######
-install libgdbm-dev libncurses5-dev automake libtool bison libffi-dev libgmp-dev &&
+install libgdbm-dev libncurses5-dev automake libtool bison libffi-dev libgmp-dev libreadline-dev &&
 install python3.5 &&
 install_nodejs &&
 install_ruby_and_rails &&

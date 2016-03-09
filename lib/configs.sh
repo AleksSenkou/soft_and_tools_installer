@@ -52,7 +52,6 @@ set_default_programs(){
     xdg-mime default nemo.desktop inode/directory application/x-gnome-saved-search
 
     cp $new_conf/defaults.list ~/.local/share/applications/defaults.list
-    killall nautilus
 }
 
 disable_apport(){
@@ -85,7 +84,7 @@ set_numix_icons(){
 }
 
 show_date_and_seconds_in_top_bar(){
-    gsettings set org.gnome.deskop.interface clock-show-date true
+    gsettings set org.gnome.desktop.interface clock-show-date true
     gsettings set org.gnome.desktop.interface clock-show-seconds true
 }
 
