@@ -11,14 +11,14 @@ add_soft_repositories &&
 install terminator sublime-text-installer skype gparted geary wine playonlinux vlc rar &&
 install nemo nemo-fileroller &&
 install firefox devilspie google-chrome-stable chromium-browser &&
-install grub-customizer &&
+install grub-customizer gimp &&
 
 ###### TOOLS ######
 install git-all &&
 install zsh git-core &&
 install_oh_my_zsh &&
 install build-essential libgl1-mesa-dev && # qt
-install ssh &&
+install ssh gnome-alsamixer &&
 install_java &&
 install_helping_tools &&
 install_mysql &&
