@@ -31,6 +31,7 @@ clone 'linux_conf' && # skype, terminator, zsh and subl configs
 paste_skype_configs &&
 paste_terminator_configs &&
 install_subl_package_control &&
+install_subl_abgrammer_theme &&
 paste_subl_configs &&
 paste_zsh_configs &&
 set_default_programs &&

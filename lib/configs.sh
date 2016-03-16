@@ -27,8 +27,17 @@ paste_terminator_configs() {
 }
 
 install_subl_package_control(){
-    cd ~/.config/sublime-text-3/Installed\ Packages &&
-    wget https://sublime.wbond.net/Package%20Control.sublime-package
+    (
+     cd ~/.config/sublime-text-3/Installed\ Packages &&
+     wget https://sublime.wbond.net/Package%20Control.sublime-package
+    )
+}
+
+install_subl_abgrammer_theme(){
+    (
+     cd ~/.config/sublime-text-3/Packages &&
+     git clone https://github.com/bahit/abgrammer-theme/ "Theme - Abgrammer"
+    )
 }
 
 paste_subl_configs(){
