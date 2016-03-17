@@ -30,5 +30,5 @@ add_passenger_repo &&
 install nginx-extras passenger &&
 sudo service nginx start &&
 
-config_nginx &&
+configure_nginx &&
 sudo service nginx restart

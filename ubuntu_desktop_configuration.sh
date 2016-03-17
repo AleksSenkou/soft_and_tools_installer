@@ -27,15 +27,15 @@ install_pg &&
 remove update-notifier emacs24 emacs &&
 
 ###### CONFIGS ######
-paste_skype_configs &&
-paste_terminator_configs &&
+set_default_programs &&
 install_subl_package_control &&
 install_subl_abgrammer_theme &&
-paste_subl_configs &&
-paste_zsh_configs &&
-set_default_programs &&
-config_git &&
-config_firefox &&
+configure_subl &&
+configure_skype &&
+configure_terminator &&
+configure_zsh &&
+configure_git &&
+configure_firefox &&
 disable_apport &&
 
 ###### GUI ######

@@ -2,11 +2,11 @@ source lib/colors.sh
 
 new_conf="$(pwd)/../configs/"
 
-paste_skype_configs() {
+configure_skype() {
     cp -avr $new_conf/Skype ~/.config
 }
 
-paste_terminator_configs() {
+configure_terminator() {
     local term_conf=~/.config/terminator
 
     if [ ! -d $term_conf ]; then
@@ -31,19 +31,20 @@ install_subl_abgrammer_theme(){
     )
 }
 
-paste_subl_configs(){
+configure_subl(){
     local subl_user_conf=~/.config/sublime-text-3/Packages/User
 
     cp $new_conf/subl/keymap $subl_user_conf/Default\ \(Linux\).sublime-keymap &&
     cp $new_conf/subl/settings $subl_user_conf/Preferences.sublime-settings &&
-    cp $new_conf/subl/package_control_settings $subl_user_conf/Package\ Control.sublime-settings
+    cp $new_conf/subl/package_control_settings $subl_user_conf/Package\ Control.sublime-settings &&
+    cp $new_conf/subl/group_switcher.py $subl_user_conf/group_switcher.py
 }
 
 change_shell_to_zsh(){
     chsh -s `which zsh`
 }
 
-paste_zsh_configs(){
+configure_zsh(){
     cp $new_conf/.zshrc ~/.zshrc
 }
 
@@ -59,21 +60,21 @@ disable_apport(){
     sudo sed -ibak -e s/^enabled\=1$/enabled\=0/ /etc/default/apport
 }
 
-config_git(){
+configure_git(){
     local email name
 
     git config --global color.ui true
 
     brown_msg "Enter git user.email:"
-    read email
-    git config --global user.email $email
+    read email &&
+    git config --global user.email $email &&
 
     brown_msg "Enter git user.name:"
-    read name
+    read name &&
     git config --global user.name $name
 }
 
-config_firefox(){
+configure_firefox(){
     mkdir ~/.devilspie
     touch ~/.devilspie/flash-fullscreen-firefox.ds
     printf '%s\n%s\n' '(if' '(is (application_name) "plugin-container")' '(begin' '(focus)' ')' ')' >> ~/.devilspie/flash-fullscreen-firefox.ds
@@ -113,28 +114,28 @@ link_to_zukitre_theme(){
 
 create_user_account(){
     brown_msg 'Type user name, please:'
-    read user_name
+    read user_name &&
 
-    sudo adduser $user_name
-    sudo adduser $user_name sudo
+    sudo adduser $user_name &&
+    sudo adduser $user_name sudo &&
     su $user_name
 }
 
-config_nginx(){
+configure_nginx(){
     local nginx_default=/etc/nginx/sites-enabled/default
     local nginx_conf=/etc/nginx/nginx.conf
 
     brown_msg 'Type domain name, please:'
-    read domain
+    read domain &&
     brown_msg "\nType app name, please:"
-    read app_name
+    read app_name &&
 
-    sudo cp nginx/nginx.conf $nginx_conf
-    sudo sed -ibak -e "s/USER/$user_name/g" $nginx_conf
+    sudo cp nginx/nginx.conf $nginx_conf &&
+    sudo sed -ibak -e "s/USER/$user_name/g" $nginx_conf &&
 
-    sudo cp nginx/default $nginx_default
-    sudo sed -ibak -e "s/USER/$user_name/g" $nginx_default
-    sudo sed -ibak -e "s/DOMAIN/$domain/g" $nginx_default
+    sudo cp nginx/default $nginx_default &&
+    sudo sed -ibak -e "s/USER/$user_name/g" $nginx_default &&
+    sudo sed -ibak -e "s/DOMAIN/$domain/g" $nginx_default &&
     sudo sed -ibak -e "s/APP/$app_name/g" $nginx_default
 }
 
