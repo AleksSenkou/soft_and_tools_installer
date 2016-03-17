@@ -528,6 +528,13 @@
       "cells": [[0, 0, 1, 1], [1, 0, 2, 1], [0, 1, 1, 2], [1, 1, 2, 2]]
     }
   },
+
+  // Switch groups
+  { "keys": ["alt+left"], "command": "group_switcher", "args": { "direction": "left" } },
+  { "keys": ["alt+right"], "command": "group_switcher", "args": { "direction": "right" } },
+  { "keys": ["alt+up"], "command": "group_switcher", "args": { "direction": "up" } },
+  { "keys": ["alt+down"], "command": "group_switcher", "args": { "direction": "down" } },
+
   { "keys": ["ctrl+1"], "command": "focus_group", "args": { "group": 0 } },
   { "keys": ["ctrl+2"], "command": "focus_group", "args": { "group": 1 } },
   { "keys": ["ctrl+3"], "command": "focus_group", "args": { "group": 2 } },
