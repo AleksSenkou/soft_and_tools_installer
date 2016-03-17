@@ -62,10 +62,10 @@
   { "keys": ["ctrl+shift+left"], "command": "move", "args": {"by": "words", "forward": false, "extend": true} },
   { "keys": ["ctrl+shift+right"], "command": "move", "args": {"by": "word_ends", "forward": true, "extend": true} },
 
-  // { "keys": ["alt+left"], "command": "focus_group", "args": { "group": 0 } },
-  // { "keys": ["alt+right"], "command": "focus_group", "args": { "group": 1 } },
-  // { "keys": ["alt+ctrl+left"], "command": "move", "args": {"by": "subwords", "forward": false, "extend": true} },
-  // { "keys": ["alt+shift+right"], "command": "move", "args": {"by": "subword_ends", "forward": true, "extend": true} },
+  { "keys": ["ctrl+alt+right"], "command": "move_to", "args": {"to": "eol"} },
+  { "keys": ["ctrl+alt+left"], "command": "move_to", "args": {"to": "bol"} },
+  { "keys": ["ctrl+alt+shift+right"], "command": "move_to", "args": {"to": "eol", "extend": true} },
+  { "keys": ["ctrl+alt+shift+left"], "command": "move_to", "args": {"to": "bol", "extend": true} },
 
   { "keys": ["alt+shift+up"], "command": "select_lines", "args": {"forward": false} },
   { "keys": ["alt+shift+down"], "command": "select_lines", "args": {"forward": true} },
@@ -513,9 +513,10 @@
     "command": "set_layout",
     "args":
     {
-      "cols": [0.0, 0.33, 0.66, 1.0],
-      "rows": [0.0, 1.0],
-      "cells": [[0, 0, 1, 1], [1, 0, 2, 1], [2, 0, 3, 1]]
+      "cols": [0.0, 0.5, 1.0],
+      "rows": [0.0, 0.5, 1.0],
+      "cells": [[0, 0, 1, 2], [1, 0, 2, 1], [1, 1, 2, 2]]
+      //  [x1,y1,x2,y2]
     }
   },
   {
@@ -523,9 +524,9 @@
     "command": "set_layout",
     "args":
     {
-      "cols": [0.0, 0.25, 0.5, 0.75, 1.0],
-      "rows": [0.0, 1.0],
-      "cells": [[0, 0, 1, 1], [1, 0, 2, 1], [2, 0, 3, 1], [3, 0, 4, 1]]
+      "cols": [0.0, 0.5, 1.0],
+      "rows": [0.0, 0.5, 1.0],
+      "cells": [[0, 0, 1, 1], [1, 0, 2, 1], [0, 1, 1, 2], [1, 1, 2, 2]]
     }
   },
   {
@@ -535,7 +536,7 @@
     {
       "cols": [0.0, 1.0],
       "rows": [0.0, 0.5, 1.0],
-      "cells": [[0, 0, 1, 1], [0, 1, 1, 2]]
+      "cells": [[0, 0, 2, 1], [0, 1, 1, 2]]
     }
   },
   {
@@ -581,11 +582,6 @@
   { "keys": ["ctrl+shift+8"], "command": "move_to_group", "args": { "group": 7 } },
   { "keys": ["ctrl+shift+9"], "command": "move_to_group", "args": { "group": 8 } },
   { "keys": ["ctrl+0"], "command": "focus_side_bar" },
-
-  { "keys": ["alt+right"], "command": "move_to", "args": {"to": "eol"} },
-  { "keys": ["alt+shift+right"], "command": "move_to", "args": {"to": "eol", "extend": true} },
-  { "keys": ["alt+shift+left"], "command": "move_to", "args": {"to": "bol", "extend": true} },
-  { "keys": ["alt+left"], "command": "move_to", "args": {"to": "bol"} },
 
   { "keys": ["ctrl+k", "ctrl+up"], "command": "new_pane" },
   { "keys": ["ctrl+k", "ctrl+shift+up"], "command": "new_pane", "args": {"move": false} },
