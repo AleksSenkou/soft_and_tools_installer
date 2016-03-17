@@ -28,6 +28,7 @@ paste_terminator_configs() {
 
 install_subl_package_control(){
     (
+     mkdir ~/.config/sublime-text-3/Installed\ Packages
      cd ~/.config/sublime-text-3/Installed\ Packages &&
      wget https://sublime.wbond.net/Package%20Control.sublime-package
     )
