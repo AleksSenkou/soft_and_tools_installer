@@ -97,6 +97,24 @@ show_date_and_seconds_in_top_bar(){
     gsettings set org.gnome.desktop.interface clock-show-seconds true
 }
 
+set_sytem_shortcuts(){
+    ### Windows swithing
+    gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-down "['<Ctrl><Alt>Down']"
+    gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-up "['<Ctrl><Alt>Up']"
+    gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['']"
+    gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['']"
+    gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-left "['']"
+    gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-right "['']"
+
+    ### Screenshots shortcuts
+    gsettings set org.gnome.settings-daemon.plugins.media-keys area-screenshot-clip '<Ctrl>Print'
+    gsettings set org.gnome.settings-daemon.plugins.media-keys window-screenshot-clip '<Ctrl><Shift>Print'
+
+    ### Volume up/down
+    gsettings set org.gnome.settings-daemon.plugins.media-keys volume-up '<Ctrl>equal'
+    gsettings set org.gnome.settings-daemon.plugins.media-keys volume-down '<Ctrl>minus'
+}
+
 link_to_zukitre_theme(){
     echo 'find zukitre here:'
     brown_msg "www.deviantart.com/download/499776227/zukitre_shell_by_tgraeca84-d89jxsz.zip?token=f6dfbd58a594cd30c8b13951d636bdfe191ba7cf&ts=1456844663 \n"
