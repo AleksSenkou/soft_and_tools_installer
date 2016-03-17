@@ -88,7 +88,7 @@ show_date_and_seconds_in_top_bar(){
     gsettings set org.gnome.desktop.interface clock-show-seconds true
 }
 
-set_sytem_shortcuts(){
+set_system_shortcuts(){
     ### Windows swithing
     gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-down "['<Ctrl><Alt>Down']"
     gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-up "['<Ctrl><Alt>Up']"

@@ -42,7 +42,7 @@ disable_apport &&
 install numix-icon-theme-circle &&
 set_numix_icons &&
 show_date_and_seconds_in_top_bar &&
-set_sytem_shortcuts &&
+set_system_shortcuts &&
 
 ###### LNG ######
 install libgdbm-dev libncurses5-dev automake libtool bison libffi-dev libgmp-dev libreadline-dev &&
