@@ -41,8 +41,8 @@ update_plan() {
     cd "$OLDPWD"
 }
 
-linux_conf_update() {
-    local new_conf=~/Documents/linux_conf
+update_configs() {
+    local new_conf=~/Documents/ubuntu_configuration/configs
     local subl_user_conf=~/.config/sublime-text-3/Packages/User
 
     cp ~/.zshrc $new_conf/.zshrc &&
