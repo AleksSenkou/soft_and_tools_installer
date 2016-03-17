@@ -27,7 +27,6 @@ install_pg &&
 remove update-notifier emacs24 emacs &&
 
 ###### CONFIGS ######
-clone 'linux_conf' && # skype, terminator, zsh and subl configs
 paste_skype_configs &&
 paste_terminator_configs &&
 install_subl_package_control &&

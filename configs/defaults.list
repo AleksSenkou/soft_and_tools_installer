@@ -1,0 +1,13 @@
+[Default Applications]
+text/plain=sublime-text.desktop
+application/x-perl=sublime-text.desktop
+text/x-chdr=sublime-text.desktop
+text/x-csrc=sublime-text.desktop
+text/x-dtd=sublime-text.desktop
+text/x-java=sublime-text.desktop
+text/mathml=sublime-text.desktop
+text/x-python=sublime-text.desktop
+text/x-sql=sublime-text.desktop
+text/xml=sublime-text.desktop
+inode/directory=nemo-folder-handler.desktop
+x-scheme-handler/ftp=firefox.desktop;

@@ -1,0 +1,32 @@
+[global_config]
+  enabled_plugins = InactivityWatch, CustomCommandsMenu, TerminalShot, LaunchpadCodeURLHandler, APTURLHandler, Logger, LaunchpadBugURLHandler
+  window_state = hidden
+  borderless = True
+  tab_position = hidden
+  suppress_multiple_term_dialog = True
+[keybindings]
+[profiles]
+  [[default]]
+    scrollbar_position = hidden
+    palette = "#000000:#aa0000:#00aa00:#aa5500:#0000aa:#aa00aa:#00aaaa:#aaaaaa:#555555:#ff5555:#55ff55:#ffff55:#5555ff:#ff55ff:#55ffff:#ffffff"
+    font = Monospace 9
+    background_image = None
+    background_darkness = 0.98
+    background_type = transparent
+    use_system_font = False
+    foreground_color = "#ffffff"
+    icon_bell = False
+    show_titlebar = False
+    copy_on_selection = True
+    cursor_blink = False
+    scrollback_infinite = True
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+    [[[window0]]]
+      type = Window
+      parent = ""
+      size = 670, 1100
+[plugins]

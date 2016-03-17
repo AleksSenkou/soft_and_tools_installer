@@ -1,0 +1,39 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"3024 Color Scheme",
+		"BeautifyRuby",
+		"Better CoffeeScript",
+		"BracketHighlighter",
+		"ColorPicker",
+		"Cucumber",
+		"Cucumber Completion",
+		"Devastate",
+		"ERB Autocomplete",
+		"Git",
+		"GitGutter",
+		"Haml",
+		"Markdown Preview",
+		"Package Control",
+		"PackageResourceViewer",
+		"Rake",
+		"Ruby on Rails snippets",
+		"Ruby Slim",
+		"RubyMotion Autocomplete",
+		"Sass",
+		"SassBeautify",
+		"SideBarEnhancements",
+		"SublimeCodeIntel",
+		"SublimeLinter",
+		"Syntax Highlighting for Sass",
+		"Theme - Brogrammer",
+		"Theme - itg.flat",
+		"Theme - Piatto",
+		"Theme - Soda",
+		"Theme - Spacegray"
+	]
+}

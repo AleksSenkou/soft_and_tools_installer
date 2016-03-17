@@ -1,16 +1,6 @@
 source lib/colors.sh
 
-clone() {
-    brown_msg ". Cloning configs... \n"
-
-    local folder=$1
-
-    cd .. &&
-    git clone https://github.com/AleksSenkou/$folder &&
-    cd $folder
-
-    new_conf="$(pwd)"
-}
+new_conf="$(pwd)/../configs/"
 
 paste_skype_configs() {
     cp -avr $new_conf/Skype ~/.config
