@@ -1,6 +1,8 @@
 [
-  { "keys": ["ctrl+q"], "command": "exit" },
+  {"keys": ["ctrl+,"], "command": "insert_snippet", "args": {"contents": "binding.pry"} },
+  {"keys": ["ctrl+."], "command": "insert_snippet", "args": {"contents": "debugger"} },
 
+  { "keys": ["ctrl+q"], "command": "exit" },
   { "keys": ["ctrl+shift+n"], "command": "new_window" },
   { "keys": ["ctrl+shift+w"], "command": "close_window" },
   { "keys": ["ctrl+o"], "command": "prompt_open_file" },
