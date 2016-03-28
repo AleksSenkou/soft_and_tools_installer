@@ -32,6 +32,9 @@ add_soft_repositories() {
     wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
     sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
 
+    sudo sh -c 'echo "deb http://deb.opera.com/opera/ stable non-free" >> /etc/apt/sources.list.d/opera.list'
+    sudo sh -c 'wget -O - http://deb.opera.com/archive.key | apt-key add -'
+
     sudo dpkg --add-architecture i386 # 32-bits architecture for skype and wine
     add_repo "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
     add_repo "ppa:ubuntu-wine/ppa"
