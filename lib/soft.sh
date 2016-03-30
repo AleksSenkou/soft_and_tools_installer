@@ -22,7 +22,6 @@ add_repo() {
 
 add_soft_repositories() {
     add_repo "ppa:webupd8team/sublime-text-3"
-    add_repo "ppa:linrunner/tlp"
     add_repo "ppa:numix/ppa"
     add_repo "ppa:yorba/ppa"
     add_repo "ppa:danielrichter2007/grub-customizer"

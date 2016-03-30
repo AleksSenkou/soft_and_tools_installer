@@ -16,7 +16,11 @@ install_java(){
 }
 
 install_helping_tools(){
-    install tlp tlp-rdw lm-sensors htop whois xclip
+    add_repo "ppa:linrunner/tlp" &&
+    add_repo "ppa:mc3man/trusty-media" &&
+    sudo apt-get update &&
+
+    install tlp tlp-rdw lm-sensors htop whois xclip ffmpeg
 }
 
 install_oh_my_zsh(){
