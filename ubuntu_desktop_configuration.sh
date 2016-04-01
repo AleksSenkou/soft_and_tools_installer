@@ -12,7 +12,7 @@ add_soft_repositories &&
 install terminator sublime-text-installer skype gparted geary wine playonlinux vlc rar &&
 install nemo nemo-fileroller &&
 install firefox devilspie google-chrome-stable chromium-browser opera &&
-install grub-customizer gimp &&
+install grub-customizer gimp unetbootin &&
 
 ###### TOOLS ######
 install git-all &&
