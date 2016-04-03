@@ -51,7 +51,7 @@ update_configs() {
     cp $subl_user_conf/Default\ \(Linux\).sublime-keymap $new_conf/subl/keymap &&
     cp $subl_user_conf/Preferences.sublime-settings $new_conf/subl/settings &&
     cp $subl_user_conf/Package\ Control.sublime-settings $new_conf/subl/package_control_settings
-    cp $subl_user_conf/group_switcher.py $new_conf/group_switcher.py
+    cp $subl_user_conf/group_switcher.py $new_conf/subl/group_switcher.py
 
     cd $new_conf
 }
