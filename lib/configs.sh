@@ -1,6 +1,6 @@
 source lib/colors.sh
 
-new_conf="$(pwd)/../configs/"
+new_conf="$(pwd)/configs"
 
 configure_skype() {
     cp -avr $new_conf/Skype ~/.config

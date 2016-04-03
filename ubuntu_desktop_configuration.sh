@@ -49,6 +49,7 @@ set_system_shortcuts &&
 install libgdbm-dev libncurses5-dev automake libtool bison libffi-dev libgmp-dev libreadline-dev &&
 install python3.5 &&
 install_nodejs &&
+install_rbenv &&
 install_ruby_and_rails &&
 
 ###### SHUTDOWN ######

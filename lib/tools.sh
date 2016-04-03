@@ -31,17 +31,18 @@ install_oh_my_zsh(){
     cd "$OLDPWD"
 }
 
-install_ruby_and_rails(){
+install_rbenv(){
     cd
     git clone git://github.com/sstephenson/rbenv.git .rbenv
     echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
     echo 'eval "$(rbenv init -)"' >> ~/.bashrc
-    exec $SHELL
 
     git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
     echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
     exec $SHELL
+}
 
+install_ruby_and_rails(){
     git clone https://github.com/sstephenson/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
 
     rbenv install 2.2.4
@@ -52,10 +53,6 @@ install_ruby_and_rails(){
 
     gem install bundler
     gem install rails -v 4.2.4
-
-    bundle exec spring binstub --all
-
-    cd "$OLDPWD"
 }
 
 install_nodejs(){

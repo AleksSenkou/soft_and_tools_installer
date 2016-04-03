@@ -19,6 +19,7 @@ install_pg &&
 ###### LNG ######
 install python3.5 &&
 install_nodejs &&
+install_rbenv &&
 install_ruby_and_rails &&
 
 ###### Passenger & Nginx ######
