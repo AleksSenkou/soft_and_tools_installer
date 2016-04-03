@@ -18,16 +18,18 @@ configure_terminator() {
 
 install_subl_package_control(){
     (
+     mkdir ~/.config/sublime-text-3
      mkdir ~/.config/sublime-text-3/Installed\ Packages
      cd ~/.config/sublime-text-3/Installed\ Packages &&
-     wget https://sublime.wbond.net/Package%20Control.sublime-package
+     sudo wget https://sublime.wbond.net/Package%20Control.sublime-package --no-check-certificate
     )
 }
 
 install_subl_abgrammer_theme(){
     (
+     mkdir ~/.config/sublime-text-3/Packages
      cd ~/.config/sublime-text-3/Packages &&
-     git clone https://github.com/bahit/abgrammer-theme/ "Theme - Abgrammer"
+     git clone https://github.com/AleksSenkou/abgrammer-theme/ "Theme - Abgrammer"
     )
 }
 
