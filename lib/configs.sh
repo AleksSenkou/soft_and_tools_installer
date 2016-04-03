@@ -21,7 +21,7 @@ install_subl_package_control(){
      mkdir ~/.config/sublime-text-3
      mkdir ~/.config/sublime-text-3/Installed\ Packages
      cd ~/.config/sublime-text-3/Installed\ Packages &&
-     sudo wget https://sublime.wbond.net/Package%20Control.sublime-package --no-check-certificate
+     wget https://sublime.wbond.net/Package%20Control.sublime-package --no-check-certificate
     )
 }
 
