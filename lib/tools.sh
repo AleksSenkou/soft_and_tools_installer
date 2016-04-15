@@ -20,7 +20,7 @@ install_helping_tools(){
     add_repo "ppa:mc3man/trusty-media" &&
     sudo apt-get update &&
 
-    install tlp tlp-rdw lm-sensors htop whois xclip ffmpeg
+    install tlp tlp-rdw lm-sensors htop whois xclip ffmpeg imagemagick
 }
 
 install_oh_my_zsh(){
