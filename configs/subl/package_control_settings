@@ -5,7 +5,6 @@
 	],
 	"installed_packages":
 	[
-		"3024 Color Scheme",
 		"BeautifyRuby",
 		"Better CoffeeScript",
 		"BracketHighlighter",
@@ -18,6 +17,7 @@
 		"GitGutter",
 		"Haml",
 		"Markdown Preview",
+		"Material Theme",
 		"Origami",
 		"Package Control",
 		"PackageResourceViewer",
@@ -30,11 +30,6 @@
 		"SideBarEnhancements",
 		"SublimeCodeIntel",
 		"SublimeLinter",
-		"Syntax Highlighting for Sass",
-		"Theme - Brogrammer",
-		"Theme - itg.flat",
-		"Theme - Piatto",
-		"Theme - Soda",
-		"Theme - Spacegray"
+		"Syntax Highlighting for Sass"
 	]
 }

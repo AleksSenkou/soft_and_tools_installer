@@ -3,7 +3,7 @@
 	"abgrammer_sidebar_tree_xsmall": true,
 	"auto_complete": true,
 	"bold_folder_labels": true,
-	"color_scheme": "Packages/Theme - Abgrammer/abgrammer.tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/abgrammer (SL).tmTheme",
 	"default_line_ending": true,
 	"detect_indentation": true,
 	"dictionary": true,
