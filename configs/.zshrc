@@ -70,6 +70,7 @@ alias gm="git merge"
 alias grh="git reset HEAD"
 alias gsh="git show"
 alias gst="git status"
+alias gstore="git config credential.helper store"
 alias g-st="git stash"
 alias g-sta="git stash apply"
 
