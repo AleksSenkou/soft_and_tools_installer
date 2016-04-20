@@ -10,4 +10,4 @@ text/x-python=sublime-text.desktop
 text/x-sql=sublime-text.desktop
 text/xml=sublime-text.desktop
 inode/directory=nemo-folder-handler.desktop
-x-scheme-handler/ftp=firefox.desktop;
+x-scheme-handler/ftp=google-chrome.desktop;

@@ -25,8 +25,6 @@ install_helping_tools &&
 install_mysql &&
 install_pg &&
 
-remove update-notifier emacs24 emacs &&
-
 ###### CONFIGS ######
 set_default_programs &&
 install_subl_package_control &&
@@ -38,6 +36,8 @@ configure_zsh &&
 configure_git &&
 configure_firefox &&
 disable_apport &&
+
+remove update-notifier emacs24 emacs &&
 
 ###### GUI ######
 install numix-icon-theme-circle &&
