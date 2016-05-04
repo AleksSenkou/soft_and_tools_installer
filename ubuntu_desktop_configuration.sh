@@ -24,6 +24,7 @@ install_java &&
 install_helping_tools &&
 install_mysql &&
 install_pg &&
+install_virtual_box &&
 
 ###### CONFIGS ######
 set_default_programs &&

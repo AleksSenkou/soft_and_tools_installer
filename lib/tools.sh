@@ -75,6 +75,11 @@ install_pg(){
 
     sudo apt-get update
 
-    install postgresql-common postgresql-9.3 libpq-dev
+    install postgresql-common postgresql-9.3 libpq-dev &&
     sudo -u postgres createuser $USER -s
+}
+
+install_virtual_box(){
+    install virtualbox vagrant &&
+    vagrant init hashicorp/precise64
 }
