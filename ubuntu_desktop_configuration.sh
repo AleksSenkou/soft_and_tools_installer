@@ -17,6 +17,7 @@ install grub-customizer gimp unetbootin &&
 ###### TOOLS ######
 install git-all &&
 install zsh git-core &&
+install cmake &&
 install_oh_my_zsh &&
 install build-essential libgl1-mesa-dev && # qt
 install ssh gnome-alsamixer &&
