@@ -13,6 +13,7 @@ install terminator sublime-text-installer skype gparted geary wine playonlinux v
 install nemo nemo-fileroller &&
 install firefox devilspie google-chrome-stable chromium-browser opera &&
 install grub-customizer gimp unetbootin &&
+install virtualbox vagrant &&
 
 ###### TOOLS ######
 install git-all &&
@@ -25,7 +26,6 @@ install_java &&
 install_helping_tools &&
 install_mysql &&
 install_pg &&
-install_virtual_box &&
 
 ###### CONFIGS ######
 set_default_programs &&
