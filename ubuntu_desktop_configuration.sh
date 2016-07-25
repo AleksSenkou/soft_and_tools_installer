@@ -9,7 +9,8 @@ select_text_color
 ###### SOFT ######
 add_soft_repositories &&
 
-install terminator sublime-text-installer skype gparted geary wine playonlinux vlc rar &&
+install tmux terminator sublime-text-installer skype gparted geary vlc rar &&
+install wine playonlinux &&
 install nemo nemo-fileroller &&
 install firefox devilspie google-chrome-stable chromium-browser opera &&
 install grub-customizer gimp unetbootin &&
