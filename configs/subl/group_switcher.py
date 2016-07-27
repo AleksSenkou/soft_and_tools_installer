@@ -5,10 +5,16 @@ class GroupSwitcher(sublime_plugin.WindowCommand):
   def goto_group(self, group_number):
     self.window.run_command('focus_group', { "group": group_number })
 
-  def dual_mode(self):
+  def dual_columns_mode(self):
     if self.direction == "left":
       self.goto_group(0)
     elif self.direction == "right":
+      self.goto_group(1)
+
+  def dual_rows_mode(self):
+    if self.direction == "up":
+      self.goto_group(0)
+    elif self.direction == "down":
       self.goto_group(1)
 
   def triple_mode(self):
@@ -46,9 +52,10 @@ class GroupSwitcher(sublime_plugin.WindowCommand):
   def select_mode(self, mode_number):
     switcher = {
         1: lambda: '',
-        2: self.dual_mode,
+        2: self.dual_columns_mode,
         3: self.triple_mode,
         4: self.quarter_mode,
+        5: self.dual_rows_mode
     }
 
     func = switcher.get(mode_number)
@@ -59,5 +66,15 @@ class GroupSwitcher(sublime_plugin.WindowCommand):
     self.group = self.window.active_group()
     self.layout = self.window.get_layout()
 
-    cellsCount = len(self.layout["cells"])
-    self.select_mode(cellsCount)
+    layout_params = [
+      len(self.layout["cells"]),
+      len(self.layout["cols"]),
+      len(self.layout["rows"])
+    ]
+
+    if layout_params == [2, 2, 3]:
+      mode_number = 5
+    else:
+      layout_params[0]
+
+    self.select_mode(mode_number)
