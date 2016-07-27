@@ -5,6 +5,7 @@
 	],
 	"installed_packages":
 	[
+		"ApplySyntax",
 		"Babel",
 		"BeautifyRuby",
 		"Better CoffeeScript",
