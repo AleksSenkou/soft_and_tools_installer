@@ -33,7 +33,6 @@
 	"match_brackets": true,
 	"match_brackets_content": true,
 	"match_selection": true,
-	"material_theme_compact_panel": true,
 	"material_theme_compact_sidebar": true,
 	"material_theme_small_statusbar": true,
 	"material_theme_small_tab": true,
