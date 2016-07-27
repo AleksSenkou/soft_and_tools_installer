@@ -2,6 +2,12 @@ source lib/colors.sh
 
 new_conf="$(pwd)/configs"
 
+configure_xbindkeys() {
+    cp $new_conf/xbindkeys/.xbindkeysrc ~/.xbindkeysrc
+
+    xbindkeys
+}
+
 configure_skype() {
     cp -avr $new_conf/Skype ~/.config
 }

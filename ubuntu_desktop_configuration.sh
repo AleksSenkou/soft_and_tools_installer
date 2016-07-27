@@ -15,6 +15,7 @@ install nemo nemo-fileroller &&
 install firefox devilspie google-chrome-stable chromium-browser opera &&
 install grub-customizer gimp unetbootin &&
 install virtualbox vagrant &&
+install xbindkeys xbindkeys-config &&
 
 ###### TOOLS ######
 install git-all &&
@@ -38,6 +39,7 @@ configure_terminator &&
 configure_zsh &&
 configure_git &&
 configure_firefox &&
+configure_xbindkeys &&
 disable_apport &&
 
 remove update-notifier emacs24 emacs &&

@@ -8,9 +8,12 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+CUSTOM_CONF=~/Documents/ubuntu_configuration/configs
+
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 export PATH="$HOME/bin:/usr/local/bin:$PATH"
+export PATH=$PATH:$CUSTOM_CONF
 
 eval "$(rbenv init -)"
 
@@ -42,18 +45,22 @@ update_plan() {
 }
 
 update_configs() {
-    local new_conf=~/Documents/ubuntu_configuration/configs
     local subl_user_conf=~/.config/sublime-text-3/Packages/User
 
-    cp ~/.zshrc $new_conf/.zshrc &&
-    cp ~/.config/terminator/config $new_conf/terminator/config &&
-    cp -avr ~/.config/Skype $new_conf &&
-    cp $subl_user_conf/Default\ \(Linux\).sublime-keymap $new_conf/subl/keymap &&
-    cp $subl_user_conf/Preferences.sublime-settings $new_conf/subl/settings &&
-    cp $subl_user_conf/Package\ Control.sublime-settings $new_conf/subl/package_control_settings
-    cp $subl_user_conf/group_switcher.py $new_conf/subl/group_switcher.py
+    cp ~/.zshrc $CUSTOM_CONF/.zshrc &&
 
-    cd $new_conf
+    cp ~/.config/terminator/config $CUSTOM_CONF/terminator/config &&
+
+    cp -avr ~/.config/Skype $CUSTOM_CONF &&
+
+    cp ~/.xbindkeysrc $CUSTOM_CONF/.xbindkeysrc &&
+
+    cp $subl_user_conf/Default\ \(Linux\).sublime-keymap $CUSTOM_CONF/subl/keymap &&
+    cp $subl_user_conf/Preferences.sublime-settings $CUSTOM_CONF/subl/settings &&
+    cp $subl_user_conf/Package\ Control.sublime-settings $CUSTOM_CONF/subl/package_control_settings
+    cp $subl_user_conf/group_switcher.py $CUSTOM_CONF/subl/group_switcher.py
+
+    cd $CUSTOM_CONF
 }
 
 ############  GIT  ################################

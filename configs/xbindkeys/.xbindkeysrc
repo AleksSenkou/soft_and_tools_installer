@@ -1,0 +1,8 @@
+"xbindkeys_show"
+  control+shift + q
+
+"~/Documents/ubuntu_configuration/configs/hide_title"
+  alt + F11
+
+"hide_title"
+  alt + F12
