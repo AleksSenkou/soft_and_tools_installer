@@ -39,15 +39,15 @@
 
 ##### Soft with configurations
 - firefox and chrome
-- terminator with [configs](https://github.com/AleksSenkou/linux_conf/blob/master/terminator/config)
+- terminator with [configs](https://github.com/AleksSenkou/ubuntu_configuration/blob/master/configs/terminator/config)
 - nemo
 - skype
-- sublime 3 with package controller, [packages](https://github.com/AleksSenkou/linux_conf/blob/master/subl/package_control_settings), [keymap](https://github.com/AleksSenkou/linux_conf/blob/master/subl/keymap) and [settings](https://github.com/AleksSenkou/linux_conf/blob/master/subl/settings)
+- sublime 3 with package controller, [packages](https://github.com/AleksSenkou/ubuntu_configuration/blob/master/configs/subl/package_control_settings), [keymap](https://github.com/AleksSenkou/ubuntu_configuration/blob/master/configs/subl/keymap) and [settings](https://github.com/AleksSenkou/ubuntu_configuration/blob/master/configs/subl/settings)
 - gparted
 - geary
 - vlc
 - playonlinux
-- [setting up default apps](https://github.com/AleksSenkou/linux_conf/blob/master/defaults.list)
+- [setting up default apps](https://github.com/AleksSenkou/ubuntu_configuration/blob/master/configs/defaults.list)
 
 ##### GUI configs
 - gnome-shell 3.10
@@ -63,5 +63,5 @@
 - nodejs
 
 ###### also
-- zsh with [.zshrc](https://github.com/AleksSenkou/linux_conf/blob/master/.zshrc)
+- zsh with [.zshrc](https://github.com/AleksSenkou/ubuntu_configuration/blob/master/configs/.zshrc)
 - oh_my_zsh
