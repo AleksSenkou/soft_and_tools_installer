@@ -34,15 +34,7 @@ NC='\033[0m'
 
 alias ohmyzsh="mate ~/.oh-my-zsh"
 alias zshrc="subl ~/.zshrc"
-alias money="ruby ~/Documents/ruby/money/money"
-alias plan="~/Documents/planning_utility/plan"
 alias skype="LD_PRELOAD=/usr/lib/i386-linux-gnu/libv4l/v4l1compat.so skype"
-
-update_plan() {
-    cd ~/Documents/planning_utility
-    gacp 'info update'
-    cd "$OLDPWD"
-}
 
 update_configs() {
     local subl_user_conf=~/.config/sublime-text-3/Packages/User
