@@ -75,6 +75,6 @@ class GroupSwitcher(sublime_plugin.WindowCommand):
     if layout_params == [2, 2, 3]:
       mode_number = 5
     else:
-      layout_params[0]
+      mode_number = layout_params[0]
 
     self.select_mode(mode_number)
