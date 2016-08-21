@@ -55,7 +55,7 @@ install_ruby_and_rails(){
 
     rbenv install 2.2.4
     rbenv install 2.3.0
-    rbenv global 2.2.4
+    rbenv global 2.3.0
 
     echo "gem: --no-ri --no-rdoc" > ~/.gemrc
 
