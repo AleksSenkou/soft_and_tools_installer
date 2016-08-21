@@ -45,7 +45,7 @@ update_configs() {
 
     cp -avr ~/.config/Skype $CUSTOM_CONF &&
 
-    cp ~/.xbindkeysrc $CUSTOM_CONF/.xbindkeysrc &&
+    cp ~/.xbindkeysrc $CUSTOM_CONF/xbindkeys &&
 
     cp $subl_user_conf/Default\ \(Linux\).sublime-keymap $CUSTOM_CONF/subl/keymap &&
     cp $subl_user_conf/Preferences.sublime-settings $CUSTOM_CONF/subl/settings &&
