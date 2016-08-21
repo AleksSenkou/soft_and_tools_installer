@@ -16,11 +16,7 @@ install_java(){
 }
 
 install_helping_tools(){
-    add_repo "ppa:linrunner/tlp" &&
-    add_repo "ppa:mc3man/trusty-media" &&
-    sudo apt-get update &&
-
-    install tlp tlp-rdw lm-sensors htop whois xclip ffmpeg imagemagick
+    install tlp tlp-rdw lm-sensors htop whois xclip ffmpeg imagemagicksudo libqt4-dev
 }
 
 install_oh_my_zsh(){
