@@ -24,7 +24,7 @@ install cmake &&
 install_oh_my_zsh &&
 install build-essential libgl1-mesa-dev && # qt
 install ssh gnome-alsamixer &&
-install_java &&
+install_java_with_elastic &&
 install_helping_tools &&
 install_mysql &&
 install_pg &&

@@ -11,8 +11,20 @@ get_imagewriter() {
     cd "$OLDPWD"
 }
 
-install_java(){
-    install icedtea-7-plugin openjdk-7-jre
+install_java_with_elastic(){
+    # OpenJDK
+    install icedtea-7-plugin openjdk-7-jre &&
+
+    # Java8
+    install oracle-java8-installer &&
+
+    # Elastic
+    wget https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-1.7.2.deb &&
+    sudo dpkg -i elasticsearch-1.7.2.deb &&
+    sudo update-rc.d elasticsearch defaults &&
+    sudo service elasticsearch start &&
+
+    rm elasticsearch-1.7.2.deb
 }
 
 install_helping_tools(){
