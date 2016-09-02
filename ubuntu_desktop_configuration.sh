@@ -28,6 +28,7 @@ install_java_with_elastic &&
 install_helping_tools &&
 install_mysql &&
 install_pg &&
+install libsqlite3-dev && #sqlite dependencies
 
 ###### CONFIGS ######
 set_default_programs &&
