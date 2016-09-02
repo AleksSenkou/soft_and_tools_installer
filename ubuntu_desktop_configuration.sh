@@ -41,6 +41,7 @@ configure_git &&
 configure_firefox &&
 configure_xbindkeys &&
 disable_apport &&
+disable_caps_lock_on_startup &&
 
 remove update-notifier emacs24 emacs &&
 

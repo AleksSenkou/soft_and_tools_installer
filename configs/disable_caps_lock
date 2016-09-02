@@ -1,0 +1,7 @@
+#!/bin/sh
+### BEGIN INIT INFO
+# Provides:          disable_caps_lock
+# Short-Description: Disable caps lock at boot time
+# Description:       Disable caps lock at boot time
+### END INIT INFO
+setxkbmap -option caps:none

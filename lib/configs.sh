@@ -147,10 +147,8 @@ configure_nginx(){
     sudo sed -ibak -e "s/APP/$app_name/g" $nginx_default
 }
 
-# disable_caps_lock(){
-#     setxkbmap -option caps:none
-# }
-
-# start_low_power_mode(){
-#     sudo tlp start
-# }
+disable_caps_lock_on_startup(){
+    sudo cp disable_caps_lock /etc/init.d/
+    sudo chmod ugo+x /etc/init.d/disable_caps_lock
+    sudo update-rc.d disable_caps_lock defaults
+}
