@@ -35,7 +35,16 @@ NC='\033[0m'
 alias ohmyzsh="mate ~/.oh-my-zsh"
 alias zshrc="subl ~/.zshrc"
 alias skype="LD_PRELOAD=/usr/lib/i386-linux-gnu/libv4l/v4l1compat.so skype"
+
 ############  Backup configs  ###############
+list_gnome_extensions() {
+    # thanks alex diavatis
+    local local_ext=~/.local/share/gnome-shell/extensions
+    local usr_ext=/usr/share/gnome-shell/extensions
+    local ext_path=$CUSTOM_CONF/gnome_extensions.list
+
+    grep "name\":" $local_ext/*/metadata.json $usr_ext/*/metadata.json | awk -F '"name": "|",' '{print $2}' > $ext_path
+}
 
 copy_subl_configs() {
     local subl_user_conf=~/.config/sublime-text-3/Packages/User
@@ -57,6 +66,7 @@ backup_configs() {
     cp ~/.xbindkeysrc $CUSTOM_CONF/xbindkeys &&
 
     copy_subl_configs
+    list_gnome_extensions
 
     cd $CUSTOM_CONF
 }
