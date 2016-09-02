@@ -35,22 +35,28 @@ NC='\033[0m'
 alias ohmyzsh="mate ~/.oh-my-zsh"
 alias zshrc="subl ~/.zshrc"
 alias skype="LD_PRELOAD=/usr/lib/i386-linux-gnu/libv4l/v4l1compat.so skype"
+############  Backup configs  ###############
 
-update_configs() {
+copy_subl_configs() {
     local subl_user_conf=~/.config/sublime-text-3/Packages/User
-
-    cp ~/.zshrc $CUSTOM_CONF/.zshrc &&
-
-    cp ~/.config/terminator/config $CUSTOM_CONF/terminator/config &&
-
-    cp -avr ~/.config/Skype $CUSTOM_CONF &&
-
-    cp ~/.xbindkeysrc $CUSTOM_CONF/xbindkeys &&
 
     cp $subl_user_conf/Default\ \(Linux\).sublime-keymap $CUSTOM_CONF/subl/keymap &&
     cp $subl_user_conf/Preferences.sublime-settings $CUSTOM_CONF/subl/settings &&
     cp $subl_user_conf/Package\ Control.sublime-settings $CUSTOM_CONF/subl/package_control_settings
     cp $subl_user_conf/group_switcher.py $CUSTOM_CONF/subl/group_switcher.py
+}
+
+backup_configs() {
+    # copy zshrc
+    cp ~/.zshrc $CUSTOM_CONF/.zshrc &&
+    # copy terminator configs
+    cp ~/.config/terminator/config $CUSTOM_CONF/terminator/config &&
+    # copy subl configs
+    cp -avr ~/.config/Skype $CUSTOM_CONF &&
+    # copy custom key bindings
+    cp ~/.xbindkeysrc $CUSTOM_CONF/xbindkeys &&
+
+    copy_subl_configs
 
     cd $CUSTOM_CONF
 }
